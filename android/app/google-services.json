@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "38744839439",
+    "firebase_url": "https://sandeepapp-1fbc2.firebaseio.com",
+    "project_id": "sandeepapp-1fbc2",
+    "storage_bucket": "sandeepapp-1fbc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38744839439:android:6d7d8cde9cff92a2921a7a",
+        "android_client_info": {
+          "package_name": "com.sandeepini.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38744839439-umaktvdrpcuee9p5mvf0uf01jplk1eej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPKWU_Pg-MtlY333sOuXSFCYoqa5h51Gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38744839439-umaktvdrpcuee9p5mvf0uf01jplk1eej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38744839439:android:d664f92f221715e5921a7a",
+        "android_client_info": {
+          "package_name": "com.sandeepini.chat_zila"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38744839439-umaktvdrpcuee9p5mvf0uf01jplk1eej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPKWU_Pg-MtlY333sOuXSFCYoqa5h51Gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38744839439-umaktvdrpcuee9p5mvf0uf01jplk1eej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
