@@ -1,3 +1,5 @@
+import 'package:chat/screens/chat_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationScreen extends StatefulWidget {
@@ -7,6 +9,9 @@ class RegistrationScreen extends StatefulWidget {
 }
 
 class _RegistrationScreenState extends State<RegistrationScreen> {
+  String email;
+  String password;
+  final _auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +32,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             TextField(
               onChanged: (value) {
                 //Do something with the user input.
+                email = value;
               },
               decoration: InputDecoration(
                 hintText: 'Enter your email',
@@ -51,6 +57,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             TextField(
               onChanged: (value) {
                 //Do something with the user input.
+                password = value;
               },
               decoration: InputDecoration(
                 hintText: 'Enter your password',
@@ -79,8 +86,20 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 borderRadius: BorderRadius.all(Radius.circular(30.0)),
                 elevation: 5.0,
                 child: MaterialButton(
-                  onPressed: () {
+                  onPressed: () async {
                     //Implement registration functionality.
+                    print(email);
+                    print(password);
+                    try {
+                      final newUser =
+                          await _auth.createUserWithEmailAndPassword(
+                              email: email, password: password);
+                      if (newUser != null) {
+                        Navigator.pushNamed(context, ChatScreen.id);
+                      }
+                    } catch (e) {
+                      print(e);
+                    }
                   },
                   minWidth: 200.0,
                   height: 42.0,
